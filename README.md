@@ -115,9 +115,9 @@ Response:<br>
 
 ### Expense Management
 - `POST /expense` - Add a new expense
-- `GET /balanceSheet` - Get user's balance sheet
+- `GET /balanceSheet/:email` - Get user's balance sheet
 - `GET /balanceSheet-overall` - Get overall expenses
-- `GET /balanceSheet/download` - Download balance sheet
+- `GET /balanceSheet/download/:email` - Download balance sheet
 <br>
 
 ### Authorization
@@ -129,7 +129,7 @@ Auth:
 ![image](https://github.com/user-attachments/assets/ecbe1ca0-692b-45f7-ab75-783ffc64cb0c)
 
 
-#### Expense
+### Expense
 Body:
 ```
 {
@@ -164,4 +164,17 @@ Error handling:
 2. amount given: 700, 100, Total: 1000
    ![image](https://github.com/user-attachments/assets/c38e343f-6376-40f9-97c1-b87f9515516e)
 3. Validating all input fields
+
+#### Balance Sheet
+1. Indivisual Balance Sheet
+   GET Request: `http://localhost:3000/balanceSheet/jack@gmail.com` 
+   ![image](https://github.com/user-attachments/assets/db922713-f137-402d-8bf7-37b734d082d5)
+   <br><br>
+2. Overall expense of all users
+   GET Request: `http://localhost:3000/balanceSheet-overall`
+   ![image](https://github.com/user-attachments/assets/6370248d-a2e1-4af6-9c5b-57a45dfd45ac)
+   <br><br>
+3. Download balance sheet
+   GET Request: `http://localhost:3000/balanceSheet/download/jack@gmail.com`
+   ![CSV Format of Balance Sheet](https://github.com/user-attachments/assets/c793df64-0e88-4026-83ee-af771cacf3ef)
 
