@@ -172,9 +172,10 @@ Error handling:
    <br><br>
 2. Overall expense of all users
    GET Request: `http://localhost:3000/balanceSheet-overall`
-   ![image](https://github.com/user-attachments/assets/6370248d-a2e1-4af6-9c5b-57a45dfd45ac)
+   ![image](https://github.com/user-attachments/assets/3088ac7d-f1aa-44b5-98e1-d6ba17ca287e)
+
    <br><br>
 3. Download balance sheet
    GET Request: `http://localhost:3000/balanceSheet/download/jack@gmail.com`
    ![CSV Format of Balance Sheet](https://github.com/user-attachments/assets/c793df64-0e88-4026-83ee-af771cacf3ef)
-
+#### Note this is the visualised data from JSON
