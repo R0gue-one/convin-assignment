@@ -1,13 +1,17 @@
 # Expense Sharing Web App
 ## About
-This backend service is designed for a Daily Expenses Sharing Application. The app allows users to add expenses and split them using three different methods: exact amounts, percentages, and equal splits. 
-It also provides features to manage users, validate inputs, and generate downloadable balance sheets for individual and overall expenses.
+This backend service is designed for a Daily Expenses Sharing Application (Assignment for Convin AI).
 
+The app allows users to add expenses and split them using three different methods: exact amounts, percentages, and equal splits. 
+It also provides features to manage users, validate inputs, and generate downloadable balance sheets.
+
+Front-end is only partially working.
 ## Features
 
 - **User Management**
   - User registration and authentication
   - User profile management with email, name, and mobile number
+  - Add Friends to share expenses between them
 
 - **Expense Management**
   - Add new expenses
@@ -57,13 +61,14 @@ npm start
 
 https://github.com/user-attachments/assets/4f03d66a-7a4a-4eb7-8d3c-8a1f44574fe6
 
+<br><br>
 
 ## API Endpoints and Usage
 
 ### Authentication
 - `POST /signup` - Register a new user
 - `POST /login` - Login user
-  <br>
+
   
 #### Signup:
 Body:
@@ -81,6 +86,7 @@ Response:
 error handling:
 ![image](https://github.com/user-attachments/assets/3083c6ce-8fe0-48f4-a43d-dab6c4b4352b)
 
+
 #### Login:
 Body:
 ```
@@ -97,6 +103,18 @@ Error handling:
 ![image](https://github.com/user-attachments/assets/62aaac04-6803-408c-976a-d4f5e30423bf)
 ![image](https://github.com/user-attachments/assets/e5edca8a-cb58-4540-b06f-9f7ead6637d8)
 
+<br><br>
+
+### Authorization
+Auth:
+![image](https://github.com/user-attachments/assets/e457526c-fd39-43d0-8782-1f791ec76e8b)
+
+Handling:
+![image](https://github.com/user-attachments/assets/40c677ea-3038-4ed8-8dd6-6c34678d2603)
+
+![image](https://github.com/user-attachments/assets/ecbe1ca0-692b-45f7-ab75-783ffc64cb0c)
+
+<br><br>
 
 ### User Management
 - `POST /addFriend` - Add a friend
@@ -118,18 +136,10 @@ Response:<br>
 - `GET /balanceSheet/:email` - Get user's balance sheet
 - `GET /balanceSheet-overall` - Get overall expenses
 - `GET /balanceSheet/download/:email` - Download balance sheet
-<br>
+  
+<br><br>
 
-### Authorization
-Auth:
-![image](https://github.com/user-attachments/assets/e457526c-fd39-43d0-8782-1f791ec76e8b)
-
-![image](https://github.com/user-attachments/assets/40c677ea-3038-4ed8-8dd6-6c34678d2603)
-
-![image](https://github.com/user-attachments/assets/ecbe1ca0-692b-45f7-ab75-783ffc64cb0c)
-
-
-### Expense
+#### Expense
 Body:
 ```
 {
@@ -169,12 +179,11 @@ Error handling:
 1. Indivisual Balance Sheet
    GET Request: `http://localhost:3000/balanceSheet/jack@gmail.com` 
    ![image](https://github.com/user-attachments/assets/db922713-f137-402d-8bf7-37b734d082d5)
-   <br><br>
+   <br>
 2. Overall expense of all users
    GET Request: `http://localhost:3000/balanceSheet-overall`
    ![image](https://github.com/user-attachments/assets/3088ac7d-f1aa-44b5-98e1-d6ba17ca287e)
-
-   <br><br>
+   <br>
 3. Download balance sheet
    GET Request: `http://localhost:3000/balanceSheet/download/jack@gmail.com`
    ![CSV Format of Balance Sheet](https://github.com/user-attachments/assets/c793df64-0e88-4026-83ee-af771cacf3ef)
