@@ -52,6 +52,11 @@ PORT=3000
 npm start
 ```
 
+## Demo Video
+
+
+https://github.com/user-attachments/assets/4f03d66a-7a4a-4eb7-8d3c-8a1f44574fe6
+
 
 ## API Endpoints and Usage
 
@@ -103,8 +108,7 @@ Body:
     "friendEmail": "vansh@gmail.com"
 }
 ```
-Authorization:
-![image](https://github.com/user-attachments/assets/e457526c-fd39-43d0-8782-1f791ec76e8b)
+
 
 Response:<br>
 ![image](https://github.com/user-attachments/assets/7c5cb8ed-3dab-4934-b9e6-97a9e42f970b)
@@ -115,6 +119,15 @@ Response:<br>
 - `GET /balanceSheet-overall` - Get overall expenses
 - `GET /balanceSheet/download` - Download balance sheet
 <br>
+
+### Authorization
+Auth:
+![image](https://github.com/user-attachments/assets/e457526c-fd39-43d0-8782-1f791ec76e8b)
+
+![image](https://github.com/user-attachments/assets/40c677ea-3038-4ed8-8dd6-6c34678d2603)
+
+![image](https://github.com/user-attachments/assets/ecbe1ca0-692b-45f7-ab75-783ffc64cb0c)
+
 
 #### Expense
 Body:
