@@ -58,6 +58,8 @@ npm start
 ### Authentication
 - `POST /signup` - Register a new user
 - `POST /login` - Login user
+  <br>
+  
 #### Signup:
 Body:
 ```
@@ -93,6 +95,8 @@ Error handling:
 
 ### User Management
 - `POST /addFriend` - Add a friend
+
+  <br>
 Body:
 ```
 {
@@ -110,3 +114,33 @@ Response:<br>
 - `GET /balanceSheet` - Get user's balance sheet
 - `GET /balanceSheet-overall` - Get overall expenses
 - `GET /balanceSheet/download` - Download balance sheet
+<br>
+
+#### Expense
+body:
+```
+{
+  "expenseID": "exp1",
+  "payer": "jatin@email.com",
+  "amount": 1000,
+  "participants": [
+    {
+      "email": "jatin@email.com",
+      "name": "Jatin",
+      "owed": 70,
+      "paid": true
+    },
+    {
+      "email": "vansh@gmail.com",
+      "name": "Vansh",
+      "owed": 30,
+      "paid": false
+    }
+  ],
+  "splitType": "percentage",
+  "splitDetails": "McD"
+}
+```
+
+response:
+![image](https://github.com/user-attachments/assets/69a44e07-0fb6-47be-9144-e6f0b41e14d1)
