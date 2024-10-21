@@ -31,7 +31,7 @@ It also provides features to manage users, validate inputs, and generate downloa
 1. Clone the repository
 ```bash
 git clone git@github.com:R0gue-one/convin-assignment.git
-cd convin-assignment
+cd convin-assignment/backend
 ```
 
 2. Install dependencies
@@ -59,7 +59,7 @@ npm start
 - `POST /signup` - Register a new user
 - `POST /login` - Login user
 #### Signup:
-body:
+Body:
 ```
 {
     "email": "jason@gmail.com",
@@ -69,13 +69,13 @@ body:
 }
 ```
 
-response:
+Response:
 ![image](https://github.com/user-attachments/assets/473de5cf-fc04-45b5-a188-d9d2956a04fc)
 error handling:
 ![image](https://github.com/user-attachments/assets/3083c6ce-8fe0-48f4-a43d-dab6c4b4352b)
 
 #### Login:
-body:
+Body:
 ```
 {
     "email": "jatin@email.com",
@@ -83,16 +83,27 @@ body:
 }
 ```
 
-response:
+Response:
 ![image](https://github.com/user-attachments/assets/b760fb15-ba4d-427c-ba90-8c2086b756f2)
 
-error handling:
+Error handling:
 ![image](https://github.com/user-attachments/assets/62aaac04-6803-408c-976a-d4f5e30423bf)
 ![image](https://github.com/user-attachments/assets/e5edca8a-cb58-4540-b06f-9f7ead6637d8)
 
 
 ### User Management
 - `POST /addFriend` - Add a friend
+Body:
+```
+{
+    "friendEmail": "vansh@gmail.com"
+}
+```
+Authorization:
+![image](https://github.com/user-attachments/assets/e457526c-fd39-43d0-8782-1f791ec76e8b)
+
+Response:<br>
+![image](https://github.com/user-attachments/assets/7c5cb8ed-3dab-4934-b9e6-97a9e42f970b)
 
 ### Expense Management
 - `POST /expense` - Add a new expense
