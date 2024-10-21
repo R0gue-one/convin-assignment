@@ -53,11 +53,43 @@ npm start
 ```
 
 
-## API Endpoints
+## API Endpoints and Usage
 
 ### Authentication
 - `POST /signup` - Register a new user
 - `POST /login` - Login user
+#### Signup:
+body:
+```
+{
+    "email": "jason@gmail.com",
+    "name": "jason",
+    "mobile": 96453219656,
+    "password": "******"
+}
+```
+
+response:
+![image](https://github.com/user-attachments/assets/473de5cf-fc04-45b5-a188-d9d2956a04fc)
+error handling:
+![image](https://github.com/user-attachments/assets/3083c6ce-8fe0-48f4-a43d-dab6c4b4352b)
+
+#### Login:
+body:
+```
+{
+    "email": "jatin@email.com",
+    "password": "********"
+}
+```
+
+response:
+![image](https://github.com/user-attachments/assets/b760fb15-ba4d-427c-ba90-8c2086b756f2)
+
+error handling:
+![image](https://github.com/user-attachments/assets/62aaac04-6803-408c-976a-d4f5e30423bf)
+![image](https://github.com/user-attachments/assets/e5edca8a-cb58-4540-b06f-9f7ead6637d8)
+
 
 ### User Management
 - `POST /addFriend` - Add a friend
