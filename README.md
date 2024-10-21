@@ -117,7 +117,7 @@ Response:<br>
 <br>
 
 #### Expense
-body:
+Body:
 ```
 {
   "expenseID": "exp1",
@@ -142,5 +142,13 @@ body:
 }
 ```
 
-response:
+Response:
 ![image](https://github.com/user-attachments/assets/69a44e07-0fb6-47be-9144-e6f0b41e14d1)
+
+Error handling:
+1. percent given: 70, 20
+   ![image](https://github.com/user-attachments/assets/06fd9501-a5cd-483a-aeec-29a35647a08d)
+2. amount given: 700, 100, Total: 1000
+   ![image](https://github.com/user-attachments/assets/c38e343f-6376-40f9-97c1-b87f9515516e)
+3. Validating all input fields
+
